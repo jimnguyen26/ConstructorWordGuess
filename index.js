@@ -41,3 +41,21 @@ function playGame() {
         makeGuess();
     }
 }
+
+function continuePrompt() {
+    inquirer.prompt([{
+        name: "continue",
+        tyoe: "list",
+        message: "Would you like to play again?",
+        choices: ["Yes", "No"]
+    }])
+    .then(data => {
+        if (data.continue === "Yes") {
+            runIt();
+        } else {
+            console.log("Thanks for playing!");
+        }
+    });
+};
+
+runIt();
