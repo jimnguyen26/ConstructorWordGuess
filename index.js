@@ -39,8 +39,8 @@ function playGame() {
         word = new Word(chosenLetter);
         word.makeLetters();
         makeGuess();
-    }
-}
+    };
+};
 
 function continuePrompt() {
     inquirer.prompt([{

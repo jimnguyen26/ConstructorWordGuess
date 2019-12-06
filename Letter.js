@@ -1,5 +1,22 @@
 function Letter(letter) {
     this.letter = letter;
-}
+    this.isGuessed = false;
+
+    this.getCharacter = function() {
+        if(!this.isGuessed) {
+            return " ";
+        } else {
+            return this.letter;
+        };
+    };
+
+    this.checkLetter = function(guess) {
+        if(guess === this.letter) {
+            this.isGuessed = true;
+        };
+    };
+};
+
+console.log("testing");
 
 module.exports = Letter;

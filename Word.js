@@ -10,14 +10,14 @@ function Word(word) {
         for (let i = 0; i < wordArr.length; i++) {
             let newLetter = new Letter(wordArr[i]);
             this.letters.push(newLetter);
-        }
+        };
     };
 
     this.makeGuess = function(guess) {
         this.letters.forEach(letter => {
             letter.checkLetter(guess);
         });
-    }
+    };
 
     this.update = function() {
         let printedWord = "";
@@ -25,7 +25,7 @@ function Word(word) {
             printedWord += letter.getCharacter() + " ";
         });
         return printedWord;
-    }
+    };
 };
 console.log("hey");
 
