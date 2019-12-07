@@ -3,7 +3,7 @@ const Letter = require("./letter.js");
 
 function Word(word) {
     this.word = word;
-    this.guess = [];
+    this.letters = [];
 
     this.makeLetters = function() {
         let wordArr = this.word.split("");
@@ -27,6 +27,6 @@ function Word(word) {
         return printedWord;
     };
 };
-console.log("hey");
+// console.log("hey");
 
 module.exports = Word;

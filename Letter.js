@@ -4,7 +4,7 @@ function Letter(letter) {
 
     this.getCharacter = function() {
         if(!this.isGuessed) {
-            return " ";
+            return "_";
         } else {
             return this.letter;
         };
@@ -17,6 +17,6 @@ function Letter(letter) {
     };
 };
 
-console.log("testing");
+// console.log("testing");
 
 module.exports = Letter;
