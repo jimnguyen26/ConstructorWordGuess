@@ -1,8 +1,6 @@
 // console.log(process.argv);
 
-// const prompt = require('prompt');
 const inquirer = require('inquirer');
-// const gi = require(`gitignore`);
 const Word = require("./Word");
 
 const westernTeams = [
@@ -13,8 +11,6 @@ const westernTeams = [
 "bucks", "pacers", "pistons", "bulls", "cavaliers",
 "heat", "magic", "hornets", "wizards", "hawks"
 ];
-
-// console.log(westernTeams);
 
 let guess;
 let chosenWords;
@@ -33,7 +29,6 @@ function playGame() {
     if(chosenWords.length < westernTeams.length) {
         chosenLetter = getWord();
     } else {
-        // console.log("You sure know your NBA teams!");
         continuePrompt();
     }
     if (chosenLetter) {
